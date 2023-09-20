@@ -17,9 +17,10 @@
 	}
 </style>
 <script type="text/javascript">
+function result() {
+	rand = Math.floor(Math.random() * 32);
 
-var mylink = new Array (
-	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は1日間！！%0A",
+	if (rand < 32) link = "https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は1日間！！%0A",
         "https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は2日間！！%0A",
         "https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は3日間！！%0A",
 	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は4日間！！%0A",
@@ -52,9 +53,7 @@ var mylink = new Array (
 	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は31日間！！%0A",
 	
       );
-function random_jump() {
-	var i = Math.floor(Math.random() * mylink.length);
-	window.open(mylink[i]); 
+
 }
 </script>
   </head>
@@ -68,7 +67,7 @@ function random_jump() {
 
    <center>
 	   <div class="main">
-		   <button class="btn" onclick="location.href='javascript:random_jump();'">毎月1日の朝に押してね♡</button>
+		   <button class="btn" onclick="location.href='javascript:result();'">毎月1日の朝に押してね♡</button>
 	  </div>
    </center>
   
