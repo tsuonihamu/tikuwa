@@ -39,7 +39,7 @@ function GetTweet(str,code){
 }
 
 function tikuwaresult() {
-	rand = Math.floor(Math.random()*32);
+	rand = Math.floor(Math.random()*2);
 	if (rand == 0) { document.getElementById("RE1").style.display = "block"};
 	if (rand == 1) { document.getElementById("RE2").style.display = "block"};
 	if (rand == 2) { document.getElementById("RE1").style.display = "block"};
@@ -75,6 +75,8 @@ function tikuwaresult() {
 	txt(msg);
 }
 </script>
+<h5><a href="javascript:;" onclick="tikkuwaresult()">RE1</a></h5>
+<h5><a href="javascript:;" onclick="tikkuwaresult()">RE2</a></h5>
   </head>
 
   <body>
