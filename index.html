@@ -37,28 +37,7 @@ function GetTweet(str,code){
 	}
 
 }
-</script>
-  </head>
 
-  <body>
-    <div class="header">
-	<center>
-	 <h1 class="title" style="text-align:center">ちくわメスガキ化日数決めボタン</h1>
-	
-	</center>
-    </div>
-
-   <center>
-	   <div class="main">
-		   <button class="btn" onclick="tikuwaresult">毎月1日の朝に押してね♡</button>
-	  </div>
-	   <div class="footer">
-		 <form action="https://ssgform.com/s/9Ix4dVy7tMeU" method="post"><table><tr>
-		<th>結果</th><td><textarea id="tweetBox" name="tweet_box" onkeyup="GetTweet(value)"
-                      cols="40"
-                      rows="8">
-
-			<script type="text/javascript">
 function tikuwaresult() {
 	rand = Math.floor(Math.random()*32);
 	if (rand == 0) msg = "今月のメスガキ化は1日間！！%0A";
@@ -96,6 +75,26 @@ function tikuwaresult() {
 	txt(msg);
 }
 </script>
+  </head>
+
+  <body>
+    <div class="header">
+	<center>
+	 <h1 class="title" style="text-align:center">ちくわメスガキ化日数決めボタン</h1>
+	
+	</center>
+    </div>
+
+   <center>
+	   <div class="main">
+		   <button class="btn" onclick="tikuwaresult">毎月1日の朝に押してね♡</button>
+	  </div>
+	   <div class="footer">
+		 <form action="https://ssgform.com/s/9Ix4dVy7tMeU" method="post"><table><tr>
+		<th>結果</th><td><textarea id="tweetBox" name="tweet_box" onkeyup="GetTweet(value)"
+                      cols="40"
+                      rows="8">
+
 		      </textarea></td></tr>
 		</table><input type="submit" value="投稿"></form>
 		<br>
