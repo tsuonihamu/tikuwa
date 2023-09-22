@@ -40,8 +40,8 @@ function GetTweet(str,code){
 
 function tikuwaresult() {
 	rand = Math.floor(Math.random()*2);
-	if (rand == 0) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 1) { document.getElementById("RE2").style.display = "block"};
+	if (rand == 0) {document.twweet_box.face.value += 今月のメスガキ化は1日間！！;};
+	if (rand == 1) {document.twweet_box.face.value += 今月のメスガキ化は2日間！！;};
 	if (rand == 2) { document.getElementById("RE1").style.display = "block"};
 	if (rand == 3) { document.getElementById("RE1").style.display = "block"};
 	if (rand == 4) { document.getElementById("RE1").style.display = "block"};
@@ -94,11 +94,7 @@ function tikuwaresult() {
 		<th>結果</th><td><textarea id="tweetBox" name="tweet_box" onkeyup="GetTweet(value)"
                       cols="40"
                       rows="8">
-<div id="RE1">
-    <p>これはSW1のエリアです。上記SW2をクリックすると消えます。</p>
-</div>
-<div id="RE2">
-    <p>これはSW1のエリアです。上記SW2をクリックすると消えます。</p>
+
 </div>
 		      </textarea></td></tr>
 		</table><input type="submit" value="投稿"></form>
