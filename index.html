@@ -77,7 +77,7 @@ function random_jump() {
 	
 <form>
    <input type="text" required>
-   <button type="submit" data-action="./uketori.html">送信</button>
+   <button type="submit">送信</button>
 </form>
 	</center>
     </div>
@@ -86,6 +86,9 @@ function random_jump() {
 	   <div class="main">
 		   <button class="btn" onclick="location.href='javascript:random_jump();'">毎月1日の朝に押してね♡</button>
 	  </div>
+	   <div class="footer">
+		   <p><?php echo $_POST["confirm"]; ?></p>
+	   </div>   
    </center>
   
 
