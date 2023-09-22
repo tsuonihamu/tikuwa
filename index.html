@@ -75,10 +75,6 @@ function random_jump() {
 	<center>
 	 <h1 class="title" style="text-align:center">ちくわメスガキ化日数決めボタン</h1>
 	
-<form method="get" action="./catch.php">
-   <input type="text" required>
-   <button type="submit">送信</button>
-</form>
 	</center>
     </div>
 
@@ -87,7 +83,17 @@ function random_jump() {
 		   <button class="btn" onclick="location.href='javascript:random_jump();'">毎月1日の朝に押してね♡</button>
 	  </div>
 	   <div class="footer">
-		 
+		 <?php
+			$name = $_POST{'name'};
+			$txt = $_POST{'txt'};
+			$txt = htmlspecialchars($txt);
+			if(isset($txt)) {
+			$file = file_get_contents('log.html');
+			$fp = fopen('log.html', 'w');
+			fputs($fp, $name . "<br />" . $txt . "<hr>" . "\n" . $file);
+			fclose($fp);
+			}
+			?>
 	   </div>   
    </center>
   
