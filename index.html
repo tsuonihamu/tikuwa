@@ -38,41 +38,14 @@ function GetTweet(str,code){
 
 }
 
-function tikuwaresult() {
-	rand = Math.floor(Math.random()*2);
-	if (rand == 0) {document.twweet_box.face.value += 今月のメスガキ化は1日間！！;};
-	if (rand == 1) {document.twweet_box.face.value += 今月のメスガキ化は2日間！！;};
-	if (rand == 2) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 3) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 4) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 5) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 6) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 7) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 8) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 9) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 10) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 11) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 12) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 13) { document.getElementById("RE1").style.display = "block"};
-	if (rand == 14) msg = "今月のメスガキ化は15日間！！%0A";
-	if (rand == 15) msg = "今月のメスガキ化は16日間！！%0A";
-	if (rand == 16) msg = "今月のメスガキ化は17日間！！%0A";
-	if (rand == 17) msg = "今月のメスガキ化は18日間！！%0A";
-	if (rand == 18) msg = "今月のメスガキ化は19日間！！%0A";
-	if (rand == 19) msg = "今月のメスガキ化は20日間！！%0A";
-	if (rand == 20) msg = "今月のメスガキ化は21日間！！%0A";
-	if (rand == 21) msg = "今月のメスガキ化は22日間！！%0A";
-	if (rand == 22) msg = "今月のメスガキ化は23日間！！%0A";
-	if (rand == 23) msg = "今月のメスガキ化は24日間！！%0A";
-	if (rand == 24) msg = "今月のメスガキ化は25日間！！%0A";
-	if (rand == 25) msg = "今月のメスガキ化は26日間！！%0A";
-	if (rand == 26) msg = "今月のメスガキ化は27日間！！%0A";
-	if (rand == 27) msg = "今月のメスガキ化は28日間！！%0A";
-	if (rand == 28) msg = "今月のメスガキ化は29日間！！%0A";
-	if (rand == 29) msg = "今月のメスガキ化は30日間！！%0A";
-	if (rand == 30) msg = "今月のメスガキ化は31日間！！%0A";
-	if (rand == 31) msg = "今月のメスガキ化はなし！！%0A";
-	alert (msg);
+
+var mylink = new Array (
+	"https://ssgform.com/s/rptRrZ92gjK3"
+	
+      );
+function random_jump() {
+	var i = Math.floor(Math.random() * mylink.length);
+	window.open(mylink[i]); 
 }
 </script>
   </head>
@@ -87,7 +60,8 @@ function tikuwaresult() {
 
    <center>
 	   <div class="main">
-		   <button class="btn" onclick="tikuwaresult">毎月1日の朝に押してね♡</button>
+		   <button class="btn" onclick="location.href='javascript:random_jump();'">毎月1日の朝に押してね♡</button>
+
 	  </div>
 	   <div class="footer">
 		 <form action="https://ssgform.com/s/9Ix4dVy7tMeU" method="post"><table><tr>
