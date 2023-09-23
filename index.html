@@ -29,24 +29,15 @@
 </style>
 <script type="text/javascript">
 
-function GetTweet(str,code){
-  var target = document.getElementById("HELLO");
-  var text_all = document.getElementById("tweetBox");
-  var input_data = text_all.value.replace(/\r?\n/g, '%0D%0A');
-  TWEET.innerHTML =　'<a class="button" href="https://twitter.com/intent/tweet?text=' + input_data + '" target="_blank">Tweet</a>'
-	}
+function tikuwaresult() {
+	rand = Math.floor(Math.random()*5);
+	if (rand == 0) {document.getElementById("RE1").style.display = "block";}
+	if (rand == 1) 
+	if (rand == 2) 
+	if (rand == 3) 
+	if (rand == 4) 
 
-}
-
-
-var mylink = new Array (
-	"https://ssgform.com/s/rptRrZ92gjK3"
 	
-      );
-function random_jump() {
-	var i = Math.floor(Math.random() * mylink.length);
-	window.open(mylink[i]); 
-}
 </script>
   </head>
 
@@ -60,18 +51,22 @@ function random_jump() {
 
    <center>
 	   <div class="main">
-		   <button class="btn" onclick="location.href='javascript:random_jump();'">毎月1日の朝に押してね♡</button>
+		   <button class="btn" onclick="tikuwaresult;"style.display='none'">毎月1日の朝に押してね♡</button>
 
 	  </div>
 	   <div class="footer">
-		 <form action="https://ssgform.com/s/9Ix4dVy7tMeU" method="post"><table><tr>
-		<th>結果</th><td><textarea id="tweetBox" name="tweet_box" onkeyup="GetTweet(value)"
-                      cols="40"
-                      rows="8">
-
-aaaa
+		   <div id="RE1" style="display:none;">
+		 <form action="https://ssgform.com/s/9Ix4dVy7tMeU" method="post"><tr>
+		<th>結果</th><td>
+			0
 		      </textarea></td></tr>
-		</table><input type="submit" value="投稿"></form>
+		</table><input type="submit" value="結果を確認"></form>
+		   </div>
+
+
+
+
+		   
 		<br>
 		<?php
 		$log = 5; //表示するログの数初期は、5
