@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Content-Script-Type" content="text/javascript">
+<!-- saved from url=(0174)file:///C:/Users/obata/Desktop/html_sample/%E3%81%A1%E3%81%8F%E3%82%8F%E3%83%A1%E3%82%B9%E3%82%AC%E3%82%AD%E5%8C%96%E6%97%A5%E6%B1%BA%E3%82%81%E3%83%9C%E3%82%BF%E3%83%B3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Content-Script-Type" content="text/javascript"><link rel="stylesheet" href="file:///C:/Users/obata/Desktop/html_sample/%E3%81%A1%E3%81%8F%E3%82%8F%E3%83%A1%E3%82%B9%E3%82%AC%E3%82%AD%E5%8C%96%E6%97%A5%E6%B1%BA%E3%82%81%E3%83%9C%E3%82%BF%E3%83%B3_files/stylesheet.css">
 
     
     <title>ちくわメスガキ化日数決めボタン</title>
@@ -9,127 +9,54 @@
 		color: #000;
 		font-size:50px;
 		background-color:#FFAAAA;
-		
 	}
 	button{
-		font-size: 40px;
+		font-size:40px;
 		background-color:#FF1111;
 		font-color: #000;
-		border-bottom: solid 5px gray;
-		border-radius: 25px;
-		padding: 20px 40px;
-	}
-	body{
-  		margin: 0;
-  		width: 100vw;
-  		height: 100vh;
-  		background-image:repeating-conic-gradient(#FF4444,#FFDDDD 10%);
-
 	}
 </style>
 <script type="text/javascript">
 
-function tikuwaresult() {
-	rand = Math.floor(Math.random()*1);
-	if (rand == 0) {
-		document.getElementById("RE1").style.display = "block";
-	};
-	if (rand == 1) {
-		document.getElementById("RE2").style.display = "block";
-	};
-	if (rand == 2) {
-		document.getElementById("RE3").style.display = "block";
-	};
-	if (rand == 3) {
-		document.getElementById("RE4").style.display = "block";
-	};
-	if (rand == 4) {
-		document.getElementById("RE5").style.display = "block";
-	};
-	if (rand == 5) {
-		document.getElementById("RE6").style.display = "block";
-	};
-	if (rand == 6) {
-		document.getElementById("RE7").style.display = "block";
-	};
-	if (rand == 7) {
-		document.getElementById("RE8").style.display = "block";
-	};
-	if (rand == 8) {
-		document.getElementById("RE9").style.display = "block";	
-	};
-	if (rand == 9) {
-		document.getElementById("RE10").style.display = "block";	
-	};
-	if (rand == 10) {
-		document.getElementById("RE11").style.display = "block";	
-	};
-	if (rand == 11) {
-		document.getElementById("RE12").style.display = "block";	
-	};
-	if (rand == 12) {
-		document.getElementById("RE13").style.display = "block";	
-	};
-	if (rand == 13) {
-		document.getElementById("RE14").style.display = "block";	
-	};
-	if (rand == 14) {
-		document.getElementById("RE15").style.display = "block";	
-	};
-	if (rand == 15) {
-		document.getElementById("RE16").style.display = "block";	
-	};
-	if (rand == 16) {
-		document.getElementById("RE17").style.display = "block";	
-	};
-	if (rand == 17) {
-		document.getElementById("RE18").style.display = "block";	
-	};
-	if (rand == 18) {
-		document.getElementById("RE19").style.display = "block";	
-	};
-	if (rand == 19) {
-		document.getElementById("RE20").style.display = "block";	
-	};
-	if (rand == 20) {
-		document.getElementById("RE21").style.display = "block";	
-	};
-	if (rand == 21) {
-		document.getElementById("RE22").style.display = "block";	
-	};
-	if (rand == 22) {
-		document.getElementById("RE23").style.display = "block";	
-	};
-	if (rand == 23) {
-		document.getElementById("RE24").style.display = "block";	
-	};
-	if (rand == 24) {
-		document.getElementById("RE25").style.display = "block";	
-	};
-	if (rand == 25) {
-		document.getElementById("RE26").style.display = "block";	
-	};
-	if (rand == 26) {
-		document.getElementById("RE27").style.display = "block";	
-	};
-	if (rand == 27) {
-		document.getElementById("RE28").style.display = "block";	
-	};
-	if (rand == 28) {
-		document.getElementById("RE29").style.display = "block";	
-	};
-	if (rand == 29) {
-		document.getElementById("RE30").style.display = "block";	
-	};
-	if (rand == 30) {
-		document.getElementById("RE31").style.display = "block";	
-	};
-	if (rand == 31) {
-		document.getElementById("RE32").style.display = "block";	
-	};
-	if (rand == 32) {
-		document.getElementById("RE33").style.display = "block";	
-	};
+var mylink = new Array (
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は0日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は1日間！！%0A",
+        "https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は2日間！！%0A",
+        "https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は3日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は4日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は5日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は6日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は7日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は8日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は9日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は10日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は11日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は12日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は13日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は14日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は15日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は16日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は17日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は18日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は19日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は20日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は21日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は22日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は23日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は24日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は25日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は26日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は27日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は28日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は29日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は30日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は31日間！！%0A",
+	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=おめでとう！大当たり！！%0A1人メンションし、その人が3日間メスガキ化する",
+	
+      );
+function random_jump() {
+	var i = Math.floor(Math.random() * mylink.length);
+	window.open(mylink[i]); 
 }
 </script>
   </head>
@@ -138,197 +65,13 @@ function tikuwaresult() {
     <div class="header">
 	<center>
 	 <h1 class="title" style="text-align:center">ちくわメスガキ化日数決めボタン</h1>
-	
 	</center>
     </div>
 
    <center>
 	   <div class="main">
-		   <button class="btn" onclick="tikuwaresult() ; style.display='none'">毎月1日の朝に押してね♡</button>
-
+		   <button class="btn" onclick="location.href='javascript:random_jump();'">毎月1日の朝に押してね♡</button>
 	  </div>
-	   <div class="footer">
-		   <div id="RE1" style="display: none;">
-			   <p>結果出ました</p>
-		<button onclick=”location.href=’https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は0日間！！%0A’”>結果を確認
-		   </div>
-		    <div id="RE2" style="display: none;">
-		 <form action="https://ssgform.com/s/rptRrZ92gjK3" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		    <div id="RE3" style="display: none;">
-		 <form action="https://ssgform.com/s/aP53jWWZzxim" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE4" style="display: none;">
-		 <form action="https://ssgform.com/s/HKoZ34zcjzoL" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE5" style="display: none;">
-		 <form action="https://ssgform.com/s/uNHmHrwOXtZh" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE6" style="display: none;">
-		 <form action="https://ssgform.com/s/rrtaOBhYpzwc" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE7" style="display: none;">
-		 <form action="https://ssgform.com/s/ofyecCdcVXv2" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE8" style="display: none;">
-		 <form action="https://ssgform.com/s/jFtd1NiLioib" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE9" style="display: none;">
-		 <form action="https://ssgform.com/s/HacKNA1aTZVH" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE10" style="display: none;">
-		 <form action="https://ssgform.com/s/Pu2bt17ZckDi" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE11" style="display: none;">
-		 <form action="https://ssgform.com/s/4wGdlkguGcXM" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE12" style="display: none;">
-		 <form action="https://ssgform.com/s/lLMxhHBxwMYf" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE13" style="display: none;">
-		 <form action="https://ssgform.com/s/vLSZrj8XU0Ar" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE14" style="display: none;">
-		 <form action="https://ssgform.com/s/ppP5XMDQDXqb" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE15" style="display: none;">
-		 <form action="https://ssgform.com/s/nesyJnqablg3" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE16" style="display: none;">
-		 <form action="https://ssgform.com/s/q2pcAXLKSG5l" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE17" style="display: none;">
-		 <form action="https://ssgform.com/s/0jbbtwFttroF" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE18" style="display: none;">
-		 <form action="https://ssgform.com/s/Y910taICZdhG" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE19" style="display: none;">
-		 <form action="https://ssgform.com/s/AKrw8Xrs2ZTx" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE20" style="display: none;">
-		 <form action="https://ssgform.com/s/cBNPrNdSsHmz" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE21" style="display: none;">
-		 <form action="https://ssgform.com/s/zkDA9V58Iaqh" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE22" style="display: none;">
-		 <form action="https://ssgform.com/s/7DCeZpcK3Iz1" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE23" style="display: none;">
-		 <form action="https://ssgform.com/s/o8jHavCOiw8f" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE24" style="display: none;">
-		 <form action="https://ssgform.com/s/elgiGEZ6I2aW" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE25" style="display: none;">
-		 <form action="https://ssgform.com/s/0fiM2Eu7KnDB" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE26" style="display: none;">
-		 <form action="https://ssgform.com/s/Ue6eYAyfArWU" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE27" style="display: none;">
-		 <form action="https://ssgform.com/s/AMqoERaBAFdk" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE28" style="display: none;">
-		 <form action="https://ssgform.com/s/Q9toX58LaFGb" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE29" style="display: none;">
-		 <form action="https://ssgform.com/s/IhBiJJHerplK" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE30" style="display: none;">
-		 <form action="https://ssgform.com/s/o5Hran9P5Li6" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE31" style="display: none;">
-		 <form action="https://ssgform.com/s/MDMbY1mdaa3V" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE32" style="display: none;">
-		 <form action="https://ssgform.com/s/iQ8GNyg67def" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   <div id="RE33" style="display: none;">
-		 <form action="https://ssgform.com/s/zMdaoNsxreM2" method="post"><tr>
-		<th>結果</th><td>出ました</td></tr>
-		<input type="submit" value="結果を確認"></form>
-		   </div>
-		   
-		   
-
-
-
-
-		   
-		<br>
-		<?php
-		$log = 5; //表示するログの数初期は、5
-		$fp = fopen('index.html', 'r');
-		for($i=0; $i < $log; $i++){
-		$fps = fgets($fp);
-		print $fps;
-		}
-		?>
-	   </div>   
    </center>
   
 
