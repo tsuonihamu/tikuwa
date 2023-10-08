@@ -46,9 +46,11 @@
 <script type="text/javascript">
 /*
 
-{
+function random{
 	rand = Math.floor(Math.random()*33);
 	if (rand == 0) {
+ 		location='https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は0日間！！%0A';
+   	} if(rand == 1) {
  */
 var mylink = new Array (
 	"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsuonihamu.github.io%2Ftikuwa%2F&text=今月のメスガキ化は0日間！！%0A",
@@ -103,6 +105,9 @@ function random_jump() {
    <center>
 	   <div class="main">
 		   <button class="btn" onclick="location.href='javascript:random_jump();'">毎月1日の朝に押してね♡</button>
+		   <!-- 
+		   <button class="btn" onclick="random()">毎月1日の朝に押してね♡</button>
+		   -->
 	  </div>
    </center>
   
