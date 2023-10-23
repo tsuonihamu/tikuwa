@@ -3,43 +3,43 @@ function tikuwaresult() {
 	{
 		document.getElementById("RE1").style.display = "block";
 	};
-	if (rand > 5) {
+	if (rand > 4) {
 		document.getElementById("RE2").style.display = "block";
 	};
-	if (rand > 7) {
+	if (rand > 6) {
 		document.getElementById("RE3").style.display = "block";
 	};
-	if (rand > 9) {
+	if (rand > 8) {
 		document.getElementById("RE4").style.display = "block";
 	};
-	if (rand > 11) {
+	if (rand > 10) {
 		document.getElementById("RE5").style.display = "block";
 	};
-	if (rand > 13) {
+	if (rand > 12) {
 		document.getElementById("RE6").style.display = "block";
 	};
-	if (rand > 17) {
+	if (rand > 16) {
 		document.getElementById("RE7").style.display = "block";
 	};
-	if (rand > 21) {
+	if (rand > 20) {
 		document.getElementById("RE8").style.display = "block";
 	};
-	if (rand > 25) {
+	if (rand > 24) {
 		document.getElementById("RE9").style.display = "block";	
 	};
-	if (rand > 29) {
+	if (rand > 28) {
 		document.getElementById("RE10").style.display = "block";	
 	};
-	if (rand > 39) {
+	if (rand > 38) {
 		document.getElementById("RE11").style.display = "block";	
 	};
-	if (rand > 49) {
+	if (rand > 48) {
 		document.getElementById("RE12").style.display = "block";	
 	};
-	if (rand > 74) {
+	if (rand > 73) {
 		document.getElementById("RE13").style.display = "block";	
 	};
-	if (rand > 100) {
+	if (rand > 98) {
 		document.getElementById("RE14").style.display = "block";	
 	};
 }
