@@ -89,10 +89,12 @@ function random() {
 		<script type="text/javascript">
 			var g15b = 'Recollect lines';
 			var g15a = ['Apollo','LAMIA'];
+
+			var arr = [];
+			var arr = arr.concat(g15b);
+			var arr = arr.concat(g15a);
 			
-			var all = [g15a[0],g15b];
-			var arr = [all];
-			var rand = Math.floor( Math.random() * 2);
+			var rand = Math.floor( Math.random() * arr.length);
 			document.write(arr[rand]);
 		</script>
 	</center>
